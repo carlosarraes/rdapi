@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :rdapi, Rdapi.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "root",
+  password: "password",
   hostname: "localhost",
   database: "rdapi_dev",
   stacktrace: true,
