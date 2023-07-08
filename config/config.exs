@@ -26,6 +26,10 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+config :rdapi, RdapiWeb.Auth.Guardian,
+  issuer: "rdapi",
+  secret_key: "YSvIkScgBNHOIz3H5jLOBvj4O9HogguDtSJvg+mcjgtzyPCRrDWoaSc/nfOisqX5"
+
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
