@@ -7,5 +7,6 @@ defmodule RdapiWeb.Router do
 
   scope "/api", RdapiWeb do
     pipe_through :api
+    get "/", DefaultController, :index
   end
 end
